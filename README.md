@@ -80,7 +80,8 @@ active: Indicates if the staff member is currently employed.
 store_id: Which store they work at.
 manager_id: ID of the staff member’s manager.
 
-Note: All SQL queries for creating and updating the tables with primary and foreign key constraints are saved in the file Bike Schema.sql.
+Note: All SQL queries for updating the tables with primary and foreign key constraints are saved in the file Bike Schema.sql.
+and all SQL queries for creating the tables  are saved in the file Bike Table.sql.
 
 Updated Database Relationships
 This database schema connects all tables through well-defined foreign key relationships, creating a unified system to track orders, inventory, staff, and customer data.
