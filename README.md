@@ -27,57 +27,85 @@ This database is designed for a bike store analysis project. It organizes data a
 
 1. orders
 Stores every order placed by customers. It includes:
+
 order_id: Unique ID for each order.
+
 customer_id: References the customer placing the order.
+
 order_status, order_date, required_date, shipped_date: Track the order timeline and current status.
+
 store_id: The store fulfilling the order.
+
 staff_id: The staff member handling the order.
 
 2. order_items
 Contains details of individual items within orders:
+
 order_id and item_id: Together uniquely identify each item in an order.
+
 product_id: References the product sold.
+
 quantity, list_price, discount: Capture quantities sold, the price per item, and any discounts applied.
 
 3. customers
 Holds information about people placing orders:
+
 customer_id: Unique customer identifier.
+
 Basic contact details: first_name, last_name, phone, email.
+
 Address details: street, city, state, zip_code.
 
 4. products
 Defines all products available for sale:
+
 product_id: Unique ID.
+
 product_name, model_year, list_price: Basic product details.
+
 brand_id and category_id: Foreign keys pointing to brands and categories.
 
 5. brands
 Lists bike brands:
+
 brand_id: Unique ID.
+
 brand_name: Brand’s name.
 
 6. categories
 Defines product categories:
+
 category_id: Unique ID.
+
 category_name: Name of the category (e.g., Mountain, Road, Electric).
 
 7. stocks
 Tracks inventory of products at each store:
+
 store_id and product_id: Together identify a unique inventory item.
+
 quantity: Number of units available.
 
 8. stores
 Contains details of physical store locations:
+
 store_id: Unique store identifier.
+
 store_name, phone, email: Store contact info.
+
 Address fields: street, city, state, zip_code.
 
 9. staffs
 Manages information about employees:
+
 staff_id: Unique staff identifier.
+
 Personal details: first_name, last_name, phone, email.
+
 active: Indicates if the staff member is currently employed.
+
 store_id: Which store they work at.
+
 manager_id: ID of the staff member’s manager.
 
 Note: All SQL queries for updating the tables with primary and foreign key constraints are saved in the file Bike Schema.sql.
