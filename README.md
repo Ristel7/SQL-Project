@@ -108,9 +108,6 @@ store_id: Which store they work at.
 
 manager_id: ID of the staff member’s manager.
 
-Note: All SQL queries for updating the tables with primary and foreign key constraints are saved in the file Bike Schema.sql.
-and all SQL queries for creating the tables  are saved in the file Bike Table.sql.
-
 Updated Database Relationships
 This database schema connects all tables through well-defined foreign key relationships, creating a unified system to track orders, inventory, staff, and customer data.
 
@@ -166,3 +163,21 @@ Analyze which products perform best per brand, category, or store.
 Track customers’ purchase patterns over time.
 Evaluate staff performance in handling orders.
 Maintain accurate inventory levels across multiple stores.
+
+Note: All SQL queries for updating the tables with primary and foreign key constraints are saved in the file Bike Schema.sql.
+and all SQL queries for creating the tables  are saved in the file Bike Table.sql.
+The Bike Query.sql file includes:
+
+Store-wise and product-wise sales analysis
+
+Monthly and category-level revenue trends
+
+Top-selling products and discount summaries
+
+Order breakdowns by status, location, and staff
+
+Insights into customer behavior (new vs. returning)
+
+Inventory summaries across stores and products
+
+Active/inactive staff metrics and assignments
